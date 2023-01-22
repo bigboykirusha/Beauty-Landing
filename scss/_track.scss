@@ -3,13 +3,16 @@
 
    &__container {
       display: flex;
-      padding-bottom: 275px;
+      padding-bottom: 25.462963vh; /* 275/1080 */
       position: relative;
       row-gap: 150px;
       @media (max-width: 900px){
          flex-wrap: wrap;
          justify-content: center;
          text-align: center;
+      }
+      @media (max-height: 1000px){
+         padding-bottom: 15.462963vh;
       }
    }
 

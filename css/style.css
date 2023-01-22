@@ -341,11 +341,6 @@ h6 {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-@media (max-height: 900px) {
-  .block-double__container_second {
-    padding-bottom: 8.458333vh;
-  }
-}
 @media (max-width: 900px) {
   .block-double__container {
     -ms-flex-wrap: wrap;
@@ -472,7 +467,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 275px;
+  padding-bottom: 25.462963vh; /* 275/1080 */
   position: relative;
   row-gap: 150px;
 }
@@ -484,6 +479,11 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+  }
+}
+@media (max-height: 1000px) {
+  .track__container {
+    padding-bottom: 15.462963vh;
   }
 }
 .track__bg {

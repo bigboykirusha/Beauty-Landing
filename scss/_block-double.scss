@@ -10,9 +10,6 @@
       row-gap: 20px;
       &_second {
          flex-direction: row-reverse;
-         @media (max-height: 900px){
-            padding-bottom: 8.458333vh;
-         }
       }
       @media (max-width: 900px){
          flex-wrap: wrap;
