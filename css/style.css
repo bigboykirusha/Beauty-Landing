@@ -164,10 +164,29 @@ h6 {
   padding-top: 42px;
   padding-bottom: 20.3vh; /* 203/1000 */
 }
+@media (max-width: 850px) {
+  .header__container {
+    padding: 21px 40px;
+    background-color: #cef4ff;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .header__logo {
   color: #000000;
   font-weight: 700;
   line-height: 1.25;
+}
+@media (max-width: 767px) {
+  .header__logo {
+    font-size: calc(24px + -3.4 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  .header__logo {
+    font-size: calc(24px + -2 * (100vw / 1920));
+  }
 }
 .header__button {
   display: -webkit-box;
@@ -180,20 +199,60 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 850px) {
+  .header__button {
+    border: 1px solid #130F49;
+    padding: 14px 20px;
+  }
+}
 .header__points {
   padding: 0 15px 0 0;
 }
 .header__caption {
   display: inline-block;
   font-weight: 600;
-  font-size: 18px;
   line-height: 1.27; /* 23/18 */
   color: #130F49;
 }
+@media (max-width: 767px) {
+  .header__caption {
+    font-size: calc(18px + -3.4 * ((100vw - 320px) / 1920));
+  }
+}
+@media (min-width: 767px) {
+  .header__caption {
+    font-size: calc(18px + -2 * (100vw / 1920));
+  }
+}
 
 .life__container {
-  padding-bottom: 368px;
+  padding-bottom: 320px;
   position: relative;
+}
+@media (max-width: 850px) {
+  .life__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 150px;
+  }
+}
+.life__mobile {
+  display: none;
+}
+@media (max-width: 850px) {
+  .life__mobile {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    top: -7vw;
+  }
 }
 .life__title {
   font-weight: 600;
@@ -202,7 +261,7 @@ h6 {
   letter-spacing: -0.02em;
   max-width: 515px;
   color: #130F49;
-  padding-bottom: 3.6vh; /* 36/1000 */
+  padding-bottom: 5vh; /* 36/1080 */
   white-space: nowrap;
 }
 @media (max-width: 767px) {
@@ -215,6 +274,18 @@ h6 {
     font-size: calc(32px + 58 * (100vw / 1920));
   }
 }
+@media (max-width: 850px) {
+  .life__title {
+    margin: 0 auto;
+    text-align: center;
+    white-space: normal;
+  }
+}
+@media (max-width: 850px) {
+  .life__br {
+    display: none;
+  }
+}
 .life__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,7 +296,17 @@ h6 {
   -webkit-column-gap: 11px;
      -moz-column-gap: 11px;
           column-gap: 11px;
-  padding-bottom: 3.6vh; /* 36/1000 */
+  padding-bottom: 5vh; /* 36/1000 */
+}
+@media (max-width: 850px) {
+  .life__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .life__subtitle {
   font-size: 26px;
@@ -269,9 +350,24 @@ h6 {
     font-size: calc(16px + 2 * (100vw / 1920));
   }
 }
+@media (max-width: 850px) {
+  .life__button {
+    display: block;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
 .life__ibg {
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (max-width: 850px) {
+  .life__ibg {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 .life__back {
   position: absolute;
@@ -341,6 +437,11 @@ h6 {
     width: 91%;
   }
 }
+@media (max-width: 850px) {
+  .life__back {
+    display: none;
+  }
+}
 
 .block-double__container {
   display: -webkit-box;
@@ -355,7 +456,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 110px;
+  padding-bottom: 238px;
   row-gap: 20px;
 }
 .block-double__container_second {
@@ -372,6 +473,7 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    padding-bottom: 150px;
   }
 }
 .block-double__picture {
@@ -505,7 +607,7 @@ h6 {
   display: flex;
   padding-bottom: 275px;
   position: relative;
-  row-gap: 150px;
+  row-gap: 238px;
 }
 @media (max-width: 900px) {
   .track__container {
@@ -515,7 +617,7 @@ h6 {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    padding-bottom: 110px;
+    padding-bottom: 150px;
   }
 }
 .track__bg {
@@ -651,6 +753,9 @@ h6 {
 .track__caption {
   padding-bottom: 5px;
 }
+.track__subtitle {
+  opacity: 0.4;
+}
 .track__body {
   max-width: 400px;
 }
@@ -666,6 +771,7 @@ h6 {
 @media (max-width: 600px) {
   .track__text {
     font-size: 34px;
+    text-align: center;
   }
 }
 .track__item {

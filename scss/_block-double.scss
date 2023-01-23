@@ -6,7 +6,7 @@
       justify-content: space-between;
       column-gap: 7.395833vw; /* 142/1920 */
       align-items: center;
-      padding-bottom: 110px;
+      padding-bottom: 238px;
       row-gap: 20px;
       &_second {
          flex-direction: row-reverse;
@@ -15,6 +15,7 @@
          flex-wrap: wrap;
          justify-content: center;
          text-align: center;
+         padding-bottom: 150px;
       }
    }
 

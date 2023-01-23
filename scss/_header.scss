@@ -10,12 +10,18 @@
 			letter-spacing: -0.05em;
 			padding-top: 42px;
 			padding-bottom: 20.3vh; /* 203/1000 */
+			@media (max-width: 850px) {
+				padding: 21px 40px;
+				background-color: #cef4ff;
+				justify-content: space-between;
+			}
 		}
 
 		&__logo {
 			color: $black-color;
 			font-weight: 700;
 			line-height: 1.25;
+			@include adaptiv-font(22, 24);
 		}
 
 		&__button {
@@ -24,6 +30,10 @@
 			border: 1px solid #E6E6E6;
 			border-radius: 16px;
 			align-items: center;
+			@media (max-width: 850px) {
+				border: 1px solid $blue-color;
+				padding: 14px 20px;
+			}
 		}
 
 		&__points {
@@ -33,7 +43,7 @@
 		&__caption {
 			display: inline-block;
 			font-weight: 600;
-			font-size: 18px;
+			@include adaptiv-font(16, 18);;
 			line-height: 1.27; /* 23/18 */
 			color: $blue-color;
 		}
