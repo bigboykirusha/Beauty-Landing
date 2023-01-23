@@ -51,6 +51,10 @@
 
    &__button {
       background: #130F49;
+      transition: background-color ease 0.3s;
+			&:hover {
+				background-color: black;
+			}
       @media (max-width: 800px) {
          margin-bottom: 30px;
       }

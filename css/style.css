@@ -198,12 +198,19 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #FFFFFF;
+  -webkit-transition: background-color ease 0.3s;
+  -o-transition: background-color ease 0.3s;
+  transition: background-color ease 0.3s;
 }
 @media (max-width: 850px) {
   .header__button {
     border: 1px solid #130F49;
     padding: 14px 20px;
   }
+}
+.header__button:hover {
+  background-color: #E6E6E6;
 }
 .header__points {
   padding: 0 15px 0 0;
@@ -339,6 +346,9 @@ h6 {
   border-radius: 20px;
   letter-spacing: -0.05em;
   color: #FFFFFF;
+  -webkit-transition: background-color ease 0.3s;
+  -o-transition: background-color ease 0.3s;
+  transition: background-color ease 0.3s;
 }
 @media (max-width: 767px) {
   .life__button {
@@ -358,6 +368,9 @@ h6 {
     width: fit-content;
     margin: 0 auto;
   }
+}
+.life__button:hover {
+  background-color: black;
 }
 .life__ibg {
   -o-object-fit: contain;
@@ -548,7 +561,7 @@ h6 {
 }
 
 .button {
-  background: #CCE8FD;
+  background-color: #CCE8FD;
   border-radius: 20px;
   padding: 13px 39px 13px 19px;
   display: -webkit-box;
@@ -563,6 +576,12 @@ h6 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-transition: background-color ease 0.3s;
+  -o-transition: background-color ease 0.3s;
+  transition: background-color ease 0.3s;
+}
+.button:hover {
+  background-color: #a7d1f1;
 }
 @media (max-width: 900px) {
   .button {
@@ -746,6 +765,16 @@ h6 {
   line-height: 128.571429%; /* 18/14 */
   letter-spacing: -0.01em;
   color: #130F49;
+  -webkit-transition: -webkit-transform ease 0.3s;
+  transition: -webkit-transform ease 0.3s;
+  -o-transition: transform ease 0.3s;
+  transition: transform ease 0.3s;
+  transition: transform ease 0.3s, -webkit-transform ease 0.3s;
+}
+.track__card:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 .track__image {
   padding-bottom: 21px;
@@ -946,6 +975,12 @@ h6 {
 }
 .footer__button {
   background: #130F49;
+  -webkit-transition: background-color ease 0.3s;
+  -o-transition: background-color ease 0.3s;
+  transition: background-color ease 0.3s;
+}
+.footer__button:hover {
+  background-color: black;
 }
 @media (max-width: 800px) {
   .footer__button {

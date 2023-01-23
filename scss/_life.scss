@@ -85,6 +85,10 @@
          width: fit-content;
          margin: 0 auto;
       }
+      transition: background-color ease 0.3s;
+			&:hover {
+				background-color: black;
+			}
    }
 
    &__ibg {

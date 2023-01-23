@@ -67,13 +67,17 @@
 }
 .button {
 
-   background: #CCE8FD;
+   background-color: #CCE8FD;
    border-radius: 20px;
    padding: 13px 39px 13px 19px;
    display: flex;
    column-gap: 15px;
    align-items: center;
    width: fit-content;
+   transition: background-color ease 0.3s;
+			&:hover {
+				background-color: #a7d1f1;
+			}
    @media (max-width: 900px){
       margin: 0 auto;
    }

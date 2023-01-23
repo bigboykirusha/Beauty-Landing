@@ -30,9 +30,16 @@
 			border: 1px solid #E6E6E6;
 			border-radius: 16px;
 			align-items: center;
+			background-color: #FFFFFF;
+			
 			@media (max-width: 850px) {
 				border: 1px solid $blue-color;
 				padding: 14px 20px;
+				
+			}
+			transition: background-color ease 0.3s;
+			&:hover {
+				background-color: #E6E6E6;
 			}
 		}
 
